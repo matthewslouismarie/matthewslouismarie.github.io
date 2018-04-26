@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    <script type="text/javascript">
+    function loadExternalCodeSnippets() {
+        Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+            var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+            var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+            var language = 'php';
+
+            var code = document.createElement('code');
+            code.className = 'language-' + language;
+
+            pre.textContent = '';
+
+            code.textContent = 'Loading…';
+
+            pre.appendChild(code);
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', src, true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+
+                    if (xhr.status < 400 && xhr.responseText) {
+                        code.textContent = xhr.responseText;
+
+                        Prism.highlightElement(code);
+                    }
+                    else if (xhr.status >= 400) {
+                        code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                    }
+                    else {
+                        code.textContent = '✖ Error: File does not exist or is empty';
+                    }
+                }
+            };
+
+            xhr.send(null);
+        });
+    }
+
+    $(document).ready(function(){
+        loadExternalCodeSnippets();
+    });
+    $('#source-view').on('shown', function () {
+        loadExternalCodeSnippets();
+    })
+</script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/LM.html">\LM</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">58</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">6</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1824658832"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-1824658832" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-247295923"></a>
+                                <a href="../namespaces/LM.html" style="margin-left: 30px; padding-left: 0">LM</a>
+            </div>
+            <div id="namespace-247295923" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1425832810"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.html" style="margin-left: 30px; padding-left: 0">AuthAbstractor</a>
+            </div>
+            <div id="namespace-1425832810" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1060791359"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Challenge.html" style="margin-left: 30px; padding-left: 0">Challenge</a>
+            </div>
+            <div id="namespace-1060791359" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Challenge.IChallenge.html">IChallenge</a></li>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.ChallengeResponse.html">ChallengeResponse</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.CredentialChallenge.html">CredentialChallenge</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.CredentialRegistrationChallenge.html">CredentialRegistrationChallenge</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.ExistingUsernameChallenge.html">ExistingUsernameChallenge</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.PasswordChallenge.html">PasswordChallenge</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.PasswordUpdateChallenge.html">PasswordUpdateChallenge</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.U2fChallenge.html">U2fChallenge</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Challenge.U2fRegistrationChallenge.html">U2fRegistrationChallenge</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1599083247"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Configuration.html" style="margin-left: 30px; padding-left: 0">Configuration</a>
+            </div>
+            <div id="namespace-1599083247" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Configuration.IApplicationConfiguration.html">IApplicationConfiguration</a></li>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-494607924"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Controller.html" style="margin-left: 30px; padding-left: 0">Controller</a>
+            </div>
+            <div id="namespace-494607924" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Controller.AuthenticationKernel.html">AuthenticationKernel</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Controller.AuthenticationProcessHandler.html">AuthenticationProcessHandler</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-603528821"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Enum.html" style="margin-left: 30px; padding-left: 0">Enum</a>
+            </div>
+            <div id="namespace-603528821" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-236503163"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Enum.AuthenticationProcess.html" style="margin-left: 30px; padding-left: 0">AuthenticationProcess</a>
+            </div>
+            <div id="namespace-236503163" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Enum.AuthenticationProcess.Status.html">Status</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1483780214"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Enum.Persistence.html" style="margin-left: 30px; padding-left: 0">Persistence</a>
+            </div>
+            <div id="namespace-1483780214" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Enum.Persistence.Operation.html">Operation</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2040889293"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Exception.html" style="margin-left: 30px; padding-left: 0">Exception</a>
+            </div>
+            <div id="namespace-2040889293" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Exception.FinishedProcessException.html">FinishedProcessException</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Exception.NoRegisteredU2fTokenException.html">NoRegisteredU2fTokenException</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-905999459"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Factory.html" style="margin-left: 30px; padding-left: 0">Factory</a>
+            </div>
+            <div id="namespace-905999459" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Factory.AuthenticationProcessFactory.html">AuthenticationProcessFactory</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Factory.U2fRegistrationFactory.html">U2fRegistrationFactory</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-271179058"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Form.html" style="margin-left: 30px; padding-left: 0">Form</a>
+            </div>
+            <div id="namespace-271179058" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2141082154"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Form.Constraint.html" style="margin-left: 30px; padding-left: 0">Constraint</a>
+            </div>
+            <div id="namespace-2141082154" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Form.Constraint.ValidNewPassword.html">ValidNewPassword</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Form.Constraint.ValidNewPasswordValidator.html">ValidNewPasswordValidator</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-705063225"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Form.Csrf.html" style="margin-left: 30px; padding-left: 0">Csrf</a>
+            </div>
+            <div id="namespace-705063225" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Form.Csrf.TokenStorageInterface.html">TokenStorageInterface</a></li>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Form.Csrf.TokenStorage.html">TokenStorage</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-453320946"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Implementation.html" style="margin-left: 30px; padding-left: 0">Implementation</a>
+            </div>
+            <div id="namespace-453320946" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Implementation.ApplicationConfiguration.html">ApplicationConfiguration</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Implementation.Callback.html">Callback</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Implementation.Member.html">Member</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Implementation.TestingTokenStorage.html">TestingTokenStorage</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Implementation.U2fRegistration.html">U2fRegistration</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-107519257"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Mocker.html" style="margin-left: 30px; padding-left: 0">Mocker</a>
+            </div>
+            <div id="namespace-107519257" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Mocker.U2fMocker.html">U2fMocker</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-253628272"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Model.html" style="margin-left: 30px; padding-left: 0">Model</a>
+            </div>
+            <div id="namespace-253628272" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Model.IAuthenticationCallback.html">IAuthenticationCallback</a></li>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Model.IAuthenticationKernel.html">IAuthenticationKernel</a></li>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Model.IAuthenticationProcess.html">IAuthenticationProcess</a></li>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Model.IMember.html">IMember</a></li>
+                                                    <li class="interface"><a href="../classes/LM.AuthAbstractor.Model.IU2fRegistration.html">IU2fRegistration</a></li>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Model.AuthenticationProcess.html">AuthenticationProcess</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Model.AuthentifierResponse.html">AuthentifierResponse</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Model.ChallengeDefinition.html">ChallengeDefinition</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Model.PersistOperation.html">PersistOperation</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Model.U2fRegistrationRequest.html">U2fRegistrationRequest</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-712626752"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.U2f.html" style="margin-left: 30px; padding-left: 0">U2f</a>
+            </div>
+            <div id="namespace-712626752" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.U2f.U2fAuthenticationManager.html">U2fAuthenticationManager</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.U2f.U2fRegistrationManager.html">U2fRegistrationManager</a></li>
+                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.U2f.U2fServerGenerator.html">U2fServerGenerator</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-750522460"></a>
+                                <a href="../namespaces/LM.AuthAbstractor.Validator.html" style="margin-left: 30px; padding-left: 0">Validator</a>
+            </div>
+            <div id="namespace-750522460" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.AuthAbstractor.Validator.PasswordValidator.html">PasswordValidator</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1905911749"></a>
+                                <a href="../namespaces/LM.Common.html" style="margin-left: 30px; padding-left: 0">Common</a>
+            </div>
+            <div id="namespace-1905911749" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-112774809"></a>
+                                <a href="../namespaces/LM.Common.DataStructure.html" style="margin-left: 30px; padding-left: 0">DataStructure</a>
+            </div>
+            <div id="namespace-112774809" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.Common.DataStructure.TypedMap.html">TypedMap</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-24026154"></a>
+                                <a href="../namespaces/LM.Common.Enum.html" style="margin-left: 30px; padding-left: 0">Enum</a>
+            </div>
+            <div id="namespace-24026154" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/LM.Common.Enum.IEnum.html">IEnum</a></li>
+                                                                                                    <li class="class"><a href="../classes/LM.Common.Enum.AbstractEnum.html">AbstractEnum</a></li>
+                                                    <li class="class"><a href="../classes/LM.Common.Enum.Scalar.html">Scalar</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1851857251"></a>
+                                <a href="../namespaces/LM.Common.Model.html" style="margin-left: 30px; padding-left: 0">Model</a>
+            </div>
+            <div id="namespace-1851857251" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/LM.Common.Model.BooleanObject.html">BooleanObject</a></li>
+                                                    <li class="class"><a href="../classes/LM.Common.Model.IntegerObject.html">IntegerObject</a></li>
+                                                    <li class="class"><a href="../classes/LM.Common.Model.StringObject.html">StringObject</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-78933782"></a>
+                                <a href="../namespaces/LM.Common.Type.html" style="margin-left: 30px; padding-left: 0">Type</a>
+            </div>
+            <div id="namespace-78933782" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                            <li class="trait"><a href="../classes/LM.Common.Type.TypeCheckerTrait.html">TypeCheckerTrait</a></li>
+                                                                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/LM.AuthAbstractor.Enum.AuthenticationProcess.html">\LM\AuthAbstractor\Enum\AuthenticationProcess</a> <i class="icon-level-up"></i>
+                                            </nav>
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+
+                    <h1><small>\LM\AuthAbstractor\Enum\AuthenticationProcess</small>Status</h1>
+                    <p><em>An enum for the status of an authentication process. It can either be ongoing,
+succeeded, or failed.</em></p>
+                    <p>Any implementation of this class only needs to define constants, and does
+not need to define a constructor or any other method.</p>
+                    
+                                        
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/LM.Common.Enum.AbstractEnum.html#method_getConstants" class="">getConstants()</a><br />
+                                                                    <a href="../classes/LM.Common.Enum.AbstractEnum.html#method___construct" class="">__construct()</a><br />
+                                                                    <a href="../classes/LM.Common.Enum.AbstractEnum.html#method_getValue" class="">getValue()</a><br />
+                                                                    <a href="../classes/LM.Common.Enum.AbstractEnum.html#method_is" class="">is()</a><br />
+                                                                    <a href="../classes/LM.Common.Enum.AbstractEnum.html#method_serialize" class="">serialize()</a><br />
+                                                                    <a href="../classes/LM.Common.Enum.AbstractEnum.html#method_unserialize" class="">unserialize()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/LM.AuthAbstractor.Enum.AuthenticationProcess.Status.html#constant_ONGOING" class="">ONGOING</a><br />
+                                                                    <a href="../classes/LM.AuthAbstractor.Enum.AuthenticationProcess.Status.html#constant_SUCCEEDED" class="">SUCCEEDED</a><br />
+                                                                    <a href="../classes/LM.AuthAbstractor.Enum.AuthenticationProcess.Status.html#constant_FAILED" class="">FAILED</a><br />
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No protected properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                        <section class="row-fluid private">
+                            <section class="span4">
+                                                                    <em>No private methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/LM.Common.Enum.AbstractEnum.html#property_value" class="">$value</a><br />
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/LM.AuthAbstractor.Enum.AuthenticationProcess.Status.html"><div class="path-wrapper">LM/AuthAbstractor/Enum/AuthenticationProcess/Status.php</div></a></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                                                                                                                                                
+                                        <div class="namespace-wrapper"><a href="../classes/LM.Common.Enum.AbstractEnum.html">\LM\Common\Enum\AbstractEnum</a></div>
+                                                                                                    <div class="namespace-wrapper">\LM\AuthAbstractor\Enum\AuthenticationProcess\Status</div>
+                            </dd>
+
+                        
+                        
+                        
+                                                
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr><td colspan="2"><em>None found</em></td></tr>
+                                        </table>
+                </aside>
+            </div>
+
+                                    <a id="constants" name="constants"></a>
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Constants</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_ONGOING" name="constant_ONGOING" class="anchor"></a>
+            <article id="constant_ONGOING" class="constant">
+                <h3 class="">ONGOING</h3>
+                <pre class="signature">ONGOING = ONGOING : </pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SUCCEEDED" name="constant_SUCCEEDED" class="anchor"></a>
+            <article id="constant_SUCCEEDED" class="constant">
+                <h3 class="">SUCCEEDED</h3>
+                <pre class="signature">SUCCEEDED = SUCCEEDED : </pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_FAILED" name="constant_FAILED" class="anchor"></a>
+            <article id="constant_FAILED" class="constant">
+                <h3 class="">FAILED</h3>
+                <pre class="signature">FAILED = FAILED : </pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                                    <a id="properties" name="properties"></a>
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Properties</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_value" name="property_value" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$value</h3>
+                <pre class="signature">$value : </pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                
+                &mdash;                             </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/LM.Common.Enum.AbstractEnum.html"><div class="path-wrapper">\LM\Common\Enum\AbstractEnum</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getConstants" name="method_getConstants" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getConstants()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getConstants() : string|string|int</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|string|int
+                                            &mdash; <p>An array of constants defined by the enum.</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/LM.Common.Enum.AbstractEnum.html"><div class="path-wrapper">\LM\Common\Enum\AbstractEnum</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                                                            <p>Shouldn't static methods be avoided?</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method___construct" name="method___construct" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">__construct()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">__construct(  <span class="argument">value</span>) : </pre>
+                <p><em>This constructor saves subclasses of this class the burden of defining
+a constructor.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>value </td>
+                                <td><p>The value to initialise the enum with. It is checked
+for correctness. (It needs to be among the constants.)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/LM.Common.Enum.AbstractEnum.html"><div class="path-wrapper">\LM\Common\Enum\AbstractEnum</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getValue" name="method_getValue" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getValue()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getValue() : </pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    
+                                            &mdash; <p>The value of the enumeration.</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/LM.Common.Enum.AbstractEnum.html"><div class="path-wrapper">\LM\Common\Enum\AbstractEnum</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_is" name="method_is" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">is()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">is( <span class="argument">enum</span>) : </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>enum </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    
+                                            &mdash; <p>Whether the two enumerations represent the same value.</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/LM.Common.Enum.AbstractEnum.html"><div class="path-wrapper">\LM\Common\Enum\AbstractEnum</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_serialize" name="method_serialize" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">serialize()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">serialize() : </pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/LM.Common.Enum.AbstractEnum.html"><div class="path-wrapper">\LM\Common\Enum\AbstractEnum</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_unserialize" name="method_unserialize" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">unserialize()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">unserialize( <span class="argument">serialized</span>) : </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>serialized </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/LM.Common.Enum.AbstractEnum.html"><div class="path-wrapper">\LM\Common\Enum\AbstractEnum</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                                    </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label">Status.php</h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/LM/AuthAbstractor/Enum/AuthenticationProcess/Status.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/LM.html">\LM</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on April 26th, 2018 at 11:48.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
