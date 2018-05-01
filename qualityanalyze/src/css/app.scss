@@ -1,0 +1,25 @@
+@import "sb-admin-2";
+@import "code";
+@import "dependencies";
+@import "tests";
+@import "source_tree";
+@import "footer";
+@import "pie_chart";
+
+body {
+    margin-top: ($navbar-height + $navbar-margin-bottom);
+    overflow-y: scroll;
+}
+
+.list-hover li:hover {
+    background-color: $table-bg-hover;
+}
+
+.label.pull-right {
+    margin-right: $padding-xs-horizontal;
+}
+
+.navbar-brand img {
+    margin: 0px $padding-xs-horizontal;
+    display: inline;
+}
