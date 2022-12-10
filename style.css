@@ -53,6 +53,25 @@ dd {
     font-size: 1.5rem;
 }
 
+.curriculum-vitae > .header > .contact {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.curriculum-vitae > .header > .contact > .list {
+    font-size: 0.8rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.curriculum-vitae > .header > .contact > .list > .item > .img {
+    height: 0.7rem;
+    width: auto;
+}
+
 .curriculum-vitae > .header > .intro {
     padding-left: 1cm;
 }
