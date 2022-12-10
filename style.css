@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 0.5cm;
+}
+
+dt {
+    font-weight: bold;
+    float: left;
+    margin-right: 0.2rem;
+}
+
+dd {
+    margin-left: 2rem;
+}
+
+.curriculum-vitae {
+    margin: auto;
+    max-width: 210mm;
+}
+
+.curriculum-vitae > .header {
+    margin-bottom: 0.25cm;
+}
+
+.curriculum-vitae > .header > .title {
+    display: inline-block;
+    text-align: right;
+}
+
+.curriculum-vitae > .header > .title > .name {
+    color: #ffffff;
+    background-color: #620000;
+    font-size: 3rem;
+    padding: 1cm 0.25cm 0.25cm 3cm;
+}
+
+.curriculum-vitae > .header > .title > .subheading {
+    padding: 0 0.25cm 0 1cm;
+    color: #620000;
+    font-size: 1.5rem;
+}
+
+.curriculum-vitae > .header > .intro {
+    padding-left: 1cm;
+}
+
+.curriculum-vitae > .frame {
+    padding: 1rem;
+}
+
+.curriculum-vitae > .-side {
+    background-color: #ebebeb;;
+    width: 36%;
+}
+
+.curriculum-vitae > .-experiences {
+    float: right;
+    width: 64%;
+}
+
+.curriculum-vitae > .frame > .cv-experience {
+    margin-bottom: 0.25cm;
+}
+
+.cv-experience > .list,
+.cv-experience > .header {
+    margin-top: 0.5rem;
+}
+
+.section-header {
+    display: inline-block;
+    color: #620000;
+}
+
+.experience-header > .title > .name {
+    border-bottom: 0.2rem solid #000000;
+    display: inline-block;
+}
+
+.experience-header > .description {
+    float: left;
+}
+
+
+.experience-header > .infos,
+.experience-header > .description {
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.experience-header > .description.-nofloat {
+    float: none;
+    text-align: left;
+}
+
+.experience-header > .infos > .item {
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+
+.experience-header > .infos > .item > .img {
+    height: 0.8rem;
+    width: auto;
+}
