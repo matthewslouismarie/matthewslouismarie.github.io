@@ -311,6 +311,7 @@ dd {
 .pf-figure {
     float: right;
     width: 50%;
+    padding-left: 0.25cm;
     padding-right: 1cm;
 }
 
@@ -321,6 +322,11 @@ dd {
 
 .pf-description {
     padding: 0 1cm;
+}
+
+.pf-description > .-floatleft {
+    float: left;
+    padding-right: 0.25cm;
 }
 
 .pf-description,
