@@ -354,3 +354,10 @@ dd {
         color: unset;
     }
 }
+
+@media (max-width: 800px) {
+    .pf-header > .cover > .title,
+    .pf-header > .pf-nav {
+        font-size: 1.5rem;
+    }
+}
