@@ -132,7 +132,6 @@ dd {
     float: left;
 }
 
-
 .experience-header > .infos,
 .experience-header > .description {
     list-style: none;
@@ -155,4 +154,194 @@ dd {
 .experience-header > .infos > .item > .img {
     height: 0.8rem;
     width: auto;
+}
+
+/** Portfolio **/
+
+.pf-header > .cover {
+    display: inline-block;
+    text-align: right;
+}
+
+.pf-header > .cover > .title,
+.pf-header > .pf-nav {
+    font-size: 3rem;
+}
+
+.pf-header > .cover > .title {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1cm 0.25cm 0.25cm 1cm;
+}
+
+.pf-header > .cover > .subtitle {
+    font-size: 2.5rem;
+}
+
+.pf-nav {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1cm 0.25cm 0.25cm 0;
+}
+
+.pf-nav > .list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.pf-nav > .list > .item {
+    display: inline-block;
+}
+
+.pf-nav > .list > .item > .link {
+    color: #000000;
+    text-decoration: none;
+    padding-left: 0.25cm;
+}
+
+.pf-nav > .list > .item > .link:hover {
+    border-bottom: 0.25cm solid #000000;
+}
+
+.pf-nav > .list > .item > .link > .img,
+.pf-nav > .list > .item > .link > .text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pf-nav > .list > .item > .link > .img {
+    height: 2.5rem;
+}
+
+.pf-article > .title {
+    text-align: right;
+    padding: 2cm 1cm 1cm;
+    font-size: 3rem;
+}
+
+.pf-article > .title.-background {
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.pf-article > .title.-background > .img {
+    position: relative;
+    bottom: -3cm;
+    filter: drop-shadow(0 0 0.25cm #000000);
+}
+
+.pf-intro {
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    height: 2cm;
+    background-size: 100% auto;
+}
+
+.pf-intro > .line {
+    position: relative;
+    top: -0.5cm;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    margin-bottom: -1rem;
+    margin-top: -0.4rem;
+    padding-left: 1cm;
+}
+
+
+.pf-intro > .line > .-bg {
+    font-size: 5rem;
+}
+
+
+.pf-intro > .line > .-xl {
+    font-size: 4rem;
+}
+
+.pf-achievements {
+    list-style-type: none;
+    font-size: 3rem;
+    padding-top: 5%;
+    font-family: monospace;
+}
+
+.pf-achievements.-background {
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: right;
+    padding-top: 4cm;
+}
+
+.pf-achievements > .item > .link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.pf-achievements > .item > .link:hover {
+    border-bottom: 0.5rem solid #000000;
+}
+
+.pf-achievements > .item > .text,
+.pf-achievements > .item > .img,
+.pf-achievements > .item > .link > .text,
+.pf-achievements > .item > .link > .img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pf-achievements > .item > .img,
+.pf-achievements > .item > .link > .img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
+
+.pf-achievements.-background > .item > .img {
+    filter: invert();
+}
+
+.pf-achievements > .item > .white {
+    display: inline-block;
+    vertical-align: middle;
+    height: 5rem;
+    background-color: #ffffff;
+}
+
+.pf-figure {
+    float: right;
+    width: 50%;
+    padding-right: 1cm;
+}
+
+.pf-figure > .img {
+    width: 100%;
+    height: auto;
+}
+
+.pf-description {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #000000;
+    padding: 0 1cm;
+}
+
+.pf-description.-background {
+    width: 100%;
+    padding: 0 50% 0 5%;
+    background-position: top right;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+}
+
+.pf-review {
+    padding: 0 5%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media print {
+    a {
+        text-decoration: none;
+        color: unset;
+    }
 }
