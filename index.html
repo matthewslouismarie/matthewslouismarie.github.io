@@ -23,11 +23,17 @@
                 <img alt="NASA-TLX of SPWD+U2F and CPWD" class="img" src="nasa_tlx.png">
                 <caption>NASA-TLX scores of SPWD+U2F (Simple Password with U2F) and CPWD (Complex Password).</caption>
             </figure>
-            <p class="pf-description">Le but de mon mémoire de licence consistait à évaluer la sécurité et l’ergonomie de plusieurs méthodes d’authentification.<br>
-            J’ai pour cela développer une librairie PHP, modulaire et compatible avec toute framework, permettant d’ajouter à son site un système d’authentification simplement, par mot de passe, U2F, ou email.<br>
-            J’ai également créer un site pour évaluer l’ergonomie de différentes méthodes d’authentification et j’ai effectué une étude avec cet outil sur une trentaine de participants.<br>
-            Les résultats de mon projet ont montré que la majorité des participants étaient non seulement plus rapides avec une combinaison « mot de passe simple + U2F » qu’un simple mot de passe compliqué, mais que cette méthode était aussi plus sécurisée.
-            </p>
+            <p class="pf-description">Il est courant d’entendre qu’un bon mot de passe doit respecter plusieurs règles assez contraignantes (comme celles de l’ANSSI) : longueur, diversité…</p>
+            <!-- <p class="pf-description">Le fait que beaucoup de sites imposent de telles règles nuit grandement à l’expérience utilisateur et, <i>in fine</i>, à la sécurité (utilisation du même mot de passe, écriture sur un post-it…).</p> -->
+            <!-- <p class="pf-description">La technologie U2F (maintenant comprise dans FIDO2) permet de renforcer grandement la sécurité en ajoutant un deuxième moyen d’authentification non vulnerable aux attaques MitM et au phishing. Associée à des règles moins contraignantes pour les mots de passe, elle permet d’améliorer à la fois la sécurité et l’ergonomie de l’authentification.</p> -->
+            <p class="pf-description">Dans le cadre de mon mémoire de licence, j’ai comparé l’ergonomie et la sécurité de deux stratégies : un mot de passe conforme aux règles de l’ANSSI, et un mot de passe sans contraintes associée à une clé U2F.</p>
+            <p class="pf-description">Ce mémoire comprenait :</p>
+            <ul class="pf-std-list">
+                <li>La création d’auth-abstractor, une librairie PHP modulaire et compatible avec toute framework permettant d’ajouter un système d’authentification à son site (combinaison configurable et extensible de mot de passe, U2F, e-mail).</li>
+                <li>La création d’un site utilisant cette librairie pour évaluer l’ergonomie de différentes méthodes d’authentification et j’ai effectué une étude avec cet outil sur une trentaine de participants.</li>
+                <li>La rédaction d’<a href="u2f_complex_passwords_are_unnecessary.pdf">un rapport</a>.</li>
+                <li>L’expertise gagné sur U2F m’a permis de présenter la technologie U2F à un Dundee PHP Meetup.</li>
+            </ul>
             <ul class="pf-achievements">
                 <li class="item"><a class="link" href="https://github.com/matthewslouismarie/auth-abstractor"><img alt="GitHub" class="img" src="github-icon.svg"><span class="text">auth-abstractor</span></a></li>
                 <li class="item"><a class="link" href="u2f_complex_passwords_are_unnecessary.pdf" target="_blank"><img alt="Mémoire de licence" class="img" src="pdf-files-icon.svg"><span class="text">Mémoire (pdf)</span></a></li>
@@ -37,9 +43,10 @@
         <article class="pf-article">
             <h1 class="title -background" style="background-image: url(http://scmapdb.wdfiles.com/local--files/map:crossed-paths:the-complete-series/20220907215054_1.jpg)"><img alt="Crossed Paths" class="img" src="crossed_paths_logo.png"></h1>
             <p class="pf-intro">
-                <span class="line">Une aventure en co-opératif</span><br>
-                <span class="line">dans un <strong class="imp -bg">univers</strong> de</span><br>
-                <span class="line">Parce que c’est <strong class="img -xl">cool.</strong></span><br>
+                <span class="line">Un projet collaboratif :</span><br>
+                <span class="line">créer une <strong class="imp -bg">aventure</strong></span><br>
+                <span class="line">avec un <strong class="imp -bg">univers</strong></span><br>
+                <span class="line"><strong class="imp -xl">unique.</strong></span><br>
             </p>
             <ul class="pf-achievements -background" style="background-image: url(http://scmapdb.wdfiles.com/local--files/map:crossed-paths:the-complete-series/20220907214838_1.jpg);">
                 <li class="item"><span class="text">+1000 téléchargements</span><img alt="Téléchargements" class="img" src="download-file-round-icon.svg"><span class="white" style="width: 2%;"></span></li>
@@ -50,7 +57,12 @@
                 <li class="item"><span class="text">5 ans</span><img alt="Années" class="img" src="schedule-icon.svg"><span class="white" style="width: 65%;"></span></li>
             </ul>
             <figure class="pf-figure"><img alt="Crossed Paths" class="img" src="crossed_paths_screenshot_2.jpg"></figure>
-            <p class="pf-description">Avec 2 autres passionnés du moteur 3D GoldSource, nous avons commencé  jeu-vidéo collaboratif utilisant ce moteur. Étalé sur 5 ans (du fait de mes études puis de ma vie professionnelle), de nombreuses difficultés techniques ont étés rencontrées du fait des fonctionnalités que nous souhaitions implémenter qui n’étaient pas prévues par le moteur. De nombreuses compétences étaient nécessaires pour mener à bien le projet : programmation des fonctionnalités (AngelScript), level-design (Hammer), création des textures (Gimp), création de l’environnement (Blender), gestion de projet (Scrum, Git, Travis). Ce projet entièrement collaboratif, non-rémunéré témoigne de ma persévérance et de ma capacité à travailler en équipe.</p>
+            <p class="pf-description">Avec 2 autres passionnés du moteur 3D GoldSource, nous avons commencé  jeu-vidéo collaboratif utilisant ce moteur.</p>
+            <ul class="pf-std-list">
+                <li>Du fait de mes études, de ma carrière professionnel et de la complexité du projet, le développement s’est étalé sur 5 ans, témoignant de ma perséverance pour un projet non-rémunéré.</li>
+                <li>Le projet nécessitait des compétences assez variées : programmation (AngelScript), graphisme pour les textures (Gimp), modélisation 3D pour les décours (Blender), gestion de projets (Git, Scrum, Travis).</li>
+                <li>Une bonne communication entre les membres de l’équipe a permit d’aboutir à un résultat cohérent.</li>
+            </ul>
             <p class="pf-review">« I enjoyed this series! The combat was really fun. […] I recommend this map for any group size! »</p>
         </article>
     </body>

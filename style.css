@@ -234,7 +234,8 @@ dd {
     color: #ffffff;
     font-size: 3rem;
     line-height: 2.5rem;
-    height: 2cm;
+    height: 0.2cm;
+    background-color: #000000;
     background-size: 100% auto;
 }
 
@@ -250,12 +251,12 @@ dd {
 
 
 .pf-intro > .line > .-bg {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 
 .pf-intro > .line > .-xl {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .pf-achievements {
@@ -319,10 +320,18 @@ dd {
 }
 
 .pf-description {
+    padding: 0 1cm;
+}
+
+.pf-description,
+.pf-std-list {
     font-size: 1.5rem;
     line-height: 2.5rem;
     color: #000000;
-    padding: 0 1cm;
+}
+
+.pf-std-list {
+    padding-left: 2cm;
 }
 
 .pf-description.-background {
@@ -334,7 +343,7 @@ dd {
 }
 
 .pf-review {
-    padding: 0 5%;
+    padding: 1cm 2cm;
     text-align: center;
     font-size: 3rem;
 }
