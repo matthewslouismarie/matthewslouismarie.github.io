@@ -33,12 +33,17 @@ dd {
 
 .curriculum-vitae > .header {
     margin-bottom: 0.25cm;
-    width: 16cm;
 }
 
-.curriculum-vitae > .header {
+.curriculum-vitae > .header > .title,
+.curriculum-vitae > .header > .contactandpicture {
     display: inline-block;
+    vertical-align: top;
+}
+
+.curriculum-vitae > .header > .title {
     text-align: right;
+    width: 70%;
 }
 
 .curriculum-vitae > .header > .title > .name {
@@ -51,28 +56,32 @@ dd {
 .curriculum-vitae > .header > .title > .subheading {
     padding: 0 0.25cm 0 1cm;
     color: #620000;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
-.curriculum-vitae > .header > .contact {
-    /* display: inline-block;
-    vertical-align: top;
-    text-align: right; */
+.curriculum-vitae > .header > .contactandpicture {
+    width: 30%;
+    padding: 0 1cm 0 0.25cm;
+}
+
+.curriculum-vitae > .header > .contactandpicture > .img {
+    width: 100%;
+    height: auto;
+}
+
+.curriculum-vitae > .header > .contactandpicture > .list {
     font-style: italic;
     opacity: 0.8;
-}
-
-.curriculum-vitae > .header > .contact > .list {
     font-size: 0.8rem;
     list-style-type: none;
     padding-left: 0;
 }
 
-.curriculum-vitae > .header > .contact > .list > .item {
+.curriculum-vitae > .header > .contactandpicture > .list > .item {
     display: inline-block;
 }
 
-.curriculum-vitae > .header > .contact > .list > .item > .img {
+.curriculum-vitae > .header > .contactandpicture > .list > .item > .img {
     height: 0.7rem;
     width: auto;
 }
@@ -104,7 +113,6 @@ dd {
     margin-bottom: 0.25cm;
 }
 
-.cv-experience > .list,
 .cv-experience > .header {
     margin-top: 0.5rem;
 }
@@ -127,6 +135,23 @@ dd {
     padding-bottom: 0.25cm;
 }
 
+.cv-experience > .skills {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cv-experience > .skills > .item {
+    display: inline-block;
+    margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+}
+
+.cv-experience > .skills > .item > .strong {
+    font-weight: normal;
+    border: 1px solid #620000;
+    border-radius: 0.1cm;
+    padding: 0 0.1cm;
+}
 
 .experience-header > .description {
     float: left;
