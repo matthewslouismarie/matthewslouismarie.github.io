@@ -297,13 +297,30 @@ dd {
     font-size: 5rem;
 }
 
-.pf-achievements {
+.pf-achievements,
+.pf-link-list {
     list-style-type: none;
     font-size: 2.5rem;
     font-family: monospace;
+    padding: 0;
 }
 
-.pf-achievements.-background {
+.pf-achievements > .item > .text,
+.pf-achievements > .item > .img,
+.pf-link-list > .item > .link > .text,
+.pf-link-list > .item > .link > .img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pf-achievements > .item > .img,
+.pf-link-list > .item > .link > .img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
+
+.pf-achievements {
     background-attachment: fixed;
     color: #ffffff;
     text-align: right;
@@ -311,32 +328,17 @@ dd {
     margin-top: 0;
 }
 
-.pf-achievements > .item > .link {
+.pf-achievements > .item > .img {
+    filter: invert();
+}
+
+.pf-link-list > .item > .link {
     color: #000000;
     text-decoration: none;
 }
 
-.pf-achievements > .item > .link:hover {
+.pf-link-list > .item > .link:hover {
     border-bottom: 0.5rem solid #000000;
-}
-
-.pf-achievements > .item > .text,
-.pf-achievements > .item > .img,
-.pf-achievements > .item > .link > .text,
-.pf-achievements > .item > .link > .img {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.pf-achievements > .item > .img,
-.pf-achievements > .item > .link > .img {
-    height: 3rem;
-    width: 3rem;
-    margin: 1rem;
-}
-
-.pf-achievements.-background > .item > .img {
-    filter: invert();
 }
 
 .pf-figure {
@@ -351,46 +353,33 @@ dd {
     height: auto;
 }
 
-.pf-achievements,
 .pf-description,
+.pf-link-list > .item,
 .pf-std-list {
-    max-width: 70rem;
+    color: #000000;
     margin: auto;
     margin-top: 3%;
-}
-
-.pf-description {
-    padding: 0 5%;
-}
-
-.pf-description > .-floatleft {
-    float: left;
-    padding-right: 0.25cm;
+    max-width: 70rem;
 }
 
 .pf-description,
 .pf-std-list {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    color: #000000;
+}
+
+.pf-description {
+    padding: 0 2rem;
 }
 
 .pf-std-list {
-    padding-left: 2cm;
-}
-
-.pf-description.-background {
-    width: 100%;
-    padding: 0 50% 0 5%;
-    background-position: top right;
-    background-size: 50% auto;
-    background-repeat: no-repeat;
+    padding-left: 8rem;
 }
 
 .pf-review {
-    padding: 1cm 2cm;
-    text-align: center;
     font-size: 3rem;
+    padding: 5% 3%;
+    text-align: center;
 }
 
 @media print {
