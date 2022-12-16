@@ -238,10 +238,22 @@ dd {
     height: 2.5rem;
 }
 
+.pf-article {
+    padding-bottom: 1cm;
+}
+
+.pf-article.-bordered {
+    border-bottom: 0.1cm dashed #6e6e6e;
+}
+
 .pf-article > .title {
     text-align: right;
     padding: 2cm 1cm 1cm;
     font-size: 3rem;
+}
+
+.pf-article > .title.-center {
+    text-align: center;
 }
 
 .pf-article > .title.-background {
@@ -267,11 +279,12 @@ dd {
 .pf-intro > .line {
     position: relative;
     top: -0.5cm;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     display: inline-block;
     margin-bottom: -1rem;
     margin-top: -0.4rem;
     padding-left: 1cm;
+    text-shadow: 0 0 0.4rem #000000;
 }
 
 
@@ -286,8 +299,7 @@ dd {
 
 .pf-achievements {
     list-style-type: none;
-    font-size: 3rem;
-    padding-top: 5%;
+    font-size: 2.5rem;
     font-family: monospace;
 }
 
@@ -296,6 +308,7 @@ dd {
     color: #ffffff;
     text-align: right;
     padding-top: 4cm;
+    margin-top: 0;
 }
 
 .pf-achievements > .item > .link {
@@ -326,13 +339,6 @@ dd {
     filter: invert();
 }
 
-.pf-achievements > .item > .white {
-    display: inline-block;
-    vertical-align: middle;
-    height: 5rem;
-    background-color: #ffffff;
-}
-
 .pf-figure {
     float: right;
     width: 50%;
@@ -345,8 +351,16 @@ dd {
     height: auto;
 }
 
+.pf-achievements,
+.pf-description,
+.pf-std-list {
+    max-width: 70rem;
+    margin: auto;
+    margin-top: 3%;
+}
+
 .pf-description {
-    padding: 0 1cm;
+    padding: 0 5%;
 }
 
 .pf-description > .-floatleft {
@@ -386,9 +400,11 @@ dd {
     }
 }
 
-@media (max-width: 800px) {
-    .pf-header > .cover > .title,
-    .pf-header > .pf-nav {
-        font-size: 1.5rem;
+@media (min-width: 1200px) {
+    .pf-achievements > .item > .white {
+        display: inline-block;
+        vertical-align: middle;
+        height: 5rem;
+        background-color: #ffffff;
     }
 }
