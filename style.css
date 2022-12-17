@@ -153,6 +153,14 @@ dd {
     padding: 0 0.1cm;
 }
 
+.cv-experience > .header,
+.cv-experience > .list > .item,
+.cv-experience > .par,
+.def-list > .item {
+    font-size: 0.9rem;
+    line-height: 1.27rem;
+}
+
 .experience-header > .description {
     float: left;
 }
@@ -386,6 +394,9 @@ dd {
     a {
         text-decoration: none;
         color: unset;
+    }
+    body {
+        padding-bottom: 1cm;
     }
 }
 
