@@ -33,6 +33,8 @@ dd {
 
 .curriculum-vitae > .header {
     margin-bottom: 0.25cm;
+    width: 64%;
+    float: right;
 }
 
 .curriculum-vitae > .header > .title,
@@ -41,57 +43,60 @@ dd {
     vertical-align: top;
 }
 
-.curriculum-vitae > .header > .title {
-    text-align: right;
-    width: 70%;
-}
-
 .curriculum-vitae > .header > .title > .name {
     color: #ffffff;
     background-color: #620000;
     font-size: 2.5rem;
-    padding: 1cm 0.25cm 0.25cm 3cm;
+    padding: 1cm 1cm 0.25cm 0.25cm;
 }
 
 .curriculum-vitae > .header > .title > .subheading {
-    padding: 0 0.25cm 0 1cm;
+    padding: 0 1cm 0 0.25cm;
     color: #620000;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
-.curriculum-vitae > .header > .contactandpicture {
-    width: 30%;
+.curriculum-vitae > .header > .title > .intro {
     padding: 0 1cm 0 0.25cm;
 }
 
-.curriculum-vitae > .header > .contactandpicture > .img {
-    width: 100%;
+.curriculum-vitae > .frame.-side > .contactandpicture {
+    margin-bottom: 0.25cm;
+}
+
+.curriculum-vitae > .frame.-side > .contactandpicture > .picture {
+    padding-right: 0.75cm;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 0;
+    max-height: 4cm;
+    overflow: hidden;
+    margin-bottom: 0.25cm;
+}
+
+.curriculum-vitae > .frame.-side > .contactandpicture > .picture > .img {
+    width: 50%;
     height: auto;
 }
 
-.curriculum-vitae > .header > .contactandpicture > .list {
+.curriculum-vitae > .frame.-side > .contactandpicture > .list {
+    padding-left: 0;
     font-style: italic;
     opacity: 0.8;
     font-size: 0.8rem;
     list-style-type: none;
-    padding-left: 0;
 }
 
-.curriculum-vitae > .header > .contactandpicture > .list > .item {
+.curriculum-vitae > .frame.-side > .contactandpicture > .list > .item {
     display: inline-block;
 }
 
-.curriculum-vitae > .header > .contactandpicture > .list > .item > .img {
+.curriculum-vitae > .frame.-side > .contactandpicture > .list > .item > .img {
     height: 0.7rem;
     width: auto;
 }
 
-.curriculum-vitae > .header > .intro {
-    padding-left: 1cm;
-}
-
 .curriculum-vitae > .frame {
-    padding-bottom: 0.2cm;
     padding-top: 0.2cm;
 }
 
@@ -111,6 +116,10 @@ dd {
 
 .curriculum-vitae > .frame > .cv-experience {
     margin-bottom: 0.25cm;
+}
+
+.curriculum-vitae > .frame > .cv-experience.-last {
+    margin-bottom: 0;
 }
 
 .cv-experience > .header {
@@ -391,11 +400,18 @@ dd {
 }
 
 @media print {
+    .curriculum-vitae > .frame.-side {
+        height: 100vh;
+        overflow: hidden;
+    }
+
     a {
         text-decoration: none;
         color: unset;
     }
     body {
+        height: 100vh;
+        overflow: hidden;
         padding-bottom: 1cm;
     }
 }
