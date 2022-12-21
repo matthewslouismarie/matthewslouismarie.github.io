@@ -102,9 +102,10 @@ dd {
 
 .curriculum-vitae > .-side {
     background-color: #ebebeb;;
-    width: 36%;
+    height: 100vh;
     padding-left: 1cm;
     padding-right: 0.2cm;
+    width: 36%;
 }
 
 .curriculum-vitae > .-experiences {
@@ -401,7 +402,6 @@ dd {
 
 @media print {
     .curriculum-vitae > .frame.-side {
-        height: 100vh;
         overflow: hidden;
     }
 
