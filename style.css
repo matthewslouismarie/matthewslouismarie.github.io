@@ -102,7 +102,7 @@ dd {
 
 .curriculum-vitae > .-side {
     background-color: #ebebeb;;
-    height: 100vh;
+    min-height: 100vh;
     padding-left: 1cm;
     padding-right: 0.2cm;
     width: 36%;
