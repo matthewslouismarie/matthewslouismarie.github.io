@@ -171,6 +171,11 @@ dd {
     line-height: 1.27rem;
 }
 
+.cv-experience > .list.-nobullet {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 .experience-header > .description {
     float: left;
 }
