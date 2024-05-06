@@ -1,0 +1,11 @@
+---
+geometry:
+  - a4paper
+  - top=3cm
+  - bottom=3cm
+  - left=3cm
+  - right=3cm
+author: Louis-Marie Matthews
+output: pdf_document
+title: "Parcours Recherche : Lettre de Motivation"
+---

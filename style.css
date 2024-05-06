@@ -28,7 +28,6 @@ dd {
 
 .curriculum-vitae {
     margin: auto;
-    max-width: 210mm;
 }
 
 .curriculum-vitae > .header {
@@ -104,7 +103,7 @@ dd {
     background-color: #ebebeb;;
     min-height: 100vh;
     padding-left: 1cm;
-    padding-right: 0.2cm;
+    padding-right: 1cm;
     width: 36%;
 }
 
