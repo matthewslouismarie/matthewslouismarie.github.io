@@ -120,6 +120,10 @@ dd {
     padding-right: 1cm;
 }
 
+.curriculum-vitae > .-experiences > .cv-experience {
+    margin-left: 0.5cm;
+}
+
 .curriculum-vitae > .frame > .cv-experience,
 .curriculum-vitae > .frame > .def-list {
     margin-bottom: 0.25cm;
