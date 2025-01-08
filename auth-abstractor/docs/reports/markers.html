@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; Markers
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/LM.html">\LM</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">276</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">48</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">6</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">Navigation</li>
+                                                                        <li><a href="#Common/Model/ArrayObject.php"><i class="icon-file"></i> Common/Model/ArrayObject.php</a></li>
+                                                                                                                                                                                                                                                                        <li><a href="#Common/DataStructure/IImmutableList.php"><i class="icon-file"></i> Common/DataStructure/IImmutableList.php</a></li>
+                                                                                                <li><a href="#Common/DataStructure/TypedList.php"><i class="icon-file"></i> Common/DataStructure/TypedList.php</a></li>
+                                                                                                                                                        <li><a href="#Common/DataStructure/TypedMap.php"><i class="icon-file"></i> Common/DataStructure/TypedMap.php</a></li>
+                                                                                                <li><a href="#Common/Enum/AbstractEnum.php"><i class="icon-file"></i> Common/Enum/AbstractEnum.php</a></li>
+                                                                                                                                                                                                                <li><a href="#Common/Type/Type.php"><i class="icon-file"></i> Common/Type/Type.php</a></li>
+                                                                                                <li><a href="#Common/Type/TypeCheckerTrait.php"><i class="icon-file"></i> Common/Type/TypeCheckerTrait.php</a></li>
+                                                                                                <li><a href="#AuthAbstractor/Model/IAuthenticationCallback.php"><i class="icon-file"></i> AuthAbstractor/Model/IAuthenticationCallback.php</a></li>
+                                                                                                                                                                                                                                                                        <li><a href="#AuthAbstractor/Model/ChallengeDefinition.php"><i class="icon-file"></i> AuthAbstractor/Model/ChallengeDefinition.php</a></li>
+                                                                                                                                                                                                                <li><a href="#AuthAbstractor/Model/IAuthenticationProcess.php"><i class="icon-file"></i> AuthAbstractor/Model/IAuthenticationProcess.php</a></li>
+                                                                                                <li><a href="#AuthAbstractor/Model/IMember.php"><i class="icon-file"></i> AuthAbstractor/Model/IMember.php</a></li>
+                                                                                                <li><a href="#AuthAbstractor/Model/IAuthenticationKernel.php"><i class="icon-file"></i> AuthAbstractor/Model/IAuthenticationKernel.php</a></li>
+                                                                                                                                                        <li><a href="#AuthAbstractor/Model/IU2fRegistration.php"><i class="icon-file"></i> AuthAbstractor/Model/IU2fRegistration.php</a></li>
+                                                                                                <li><a href="#AuthAbstractor/Model/PersistOperation.php"><i class="icon-file"></i> AuthAbstractor/Model/PersistOperation.php</a></li>
+                                                                                                                                                                                                                <li><a href="#AuthAbstractor/Controller/AuthenticationKernel.php"><i class="icon-file"></i> AuthAbstractor/Controller/AuthenticationKernel.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="#AuthAbstractor/Implementation/TestingTokenStorage.php"><i class="icon-file"></i> AuthAbstractor/Implementation/TestingTokenStorage.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="#AuthAbstractor/U2f/U2fAuthenticationManager.php"><i class="icon-file"></i> AuthAbstractor/U2f/U2fAuthenticationManager.php</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </div>
+
+        <div class="span10 offset2">
+
+            <ul class="breadcrumb">
+                <li><a href="../"><i class="icon-map-marker"></i></a><span class="divider">\</span></li>
+                <li>Markers</li>
+            </ul>
+
+            
+            <div id="marker-accordion">
+                                                            <div class="package-contents">
+                            <a name="Common/Model/ArrayObject.php" id="Common/Model/ArrayObject.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Common/Model/ArrayObject.php
+                                <small style="float: right;padding-right: 10px;">9</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>17</td>
+                                            <td>Delete?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>61</td>
+                                            <td>Rename to append.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>61</td>
+                                            <td>Remove $type parameter.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>73</td>
+                                            <td>Remove type parameter.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>87</td>
+                                            <td>Delete</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>87</td>
+                                            <td>Rename to add.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>87</td>
+                                            <td>Remove type parameter.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>108</td>
+                                            <td>Remove type parameter.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>130</td>
+                                            <td>Mutable object!</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                            <div class="package-contents">
+                            <a name="Common/DataStructure/IImmutableList.php" id="Common/DataStructure/IImmutableList.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Common/DataStructure/IImmutableList.php
+                                <small style="float: right;padding-right: 10px;">2</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>20</td>
+                                            <td>Make it extend an IComparable interface.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>20</td>
+                                            <td>Check for conventions (book about design patterns).</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Common/DataStructure/TypedList.php" id="Common/DataStructure/TypedList.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Common/DataStructure/TypedList.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>27</td>
+                                            <td>$type should maybe have a IType type?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="Common/DataStructure/TypedMap.php" id="Common/DataStructure/TypedMap.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Common/DataStructure/TypedMap.php
+                                <small style="float: right;padding-right: 10px;">4</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>17</td>
+                                            <td>Force items it contains to be serializable?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>77</td>
+                                            <td>Add unit-test for it.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>95</td>
+                                            <td>Add unit-test.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>95</td>
+                                            <td>Should throw an exception if key already set.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Common/Enum/AbstractEnum.php" id="Common/Enum/AbstractEnum.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Common/Enum/AbstractEnum.php
+                                <small style="float: right;padding-right: 10px;">2</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>20</td>
+                                            <td>Don&#039;t use enums at all.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>30</td>
+                                            <td>Shouldn&#039;t static methods be avoided?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="Common/Type/Type.php" id="Common/Type/Type.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Common/Type/Type.php
+                                <small style="float: right;padding-right: 10px;">4</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>16</td>
+                                            <td>Make it implement an interface.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>16</td>
+                                            <td>Rely on an implementation (Scalar).</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>82</td>
+                                            <td>Use is_a or instanceof instead?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>82</td>
+                                            <td>Long switch-like statement.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Common/Type/TypeCheckerTrait.php" id="Common/Type/TypeCheckerTrait.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Common/Type/TypeCheckerTrait.php
+                                <small style="float: right;padding-right: 10px;">2</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>16</td>
+                                            <td>Turn it into a class instead?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>71</td>
+                                            <td>Use is_a or instanceof instead?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="AuthAbstractor/Model/IAuthenticationCallback.php" id="AuthAbstractor/Model/IAuthenticationCallback.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Model/IAuthenticationCallback.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>15</td>
+                                            <td>Should distinguish between the first time and the subsequent times.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                            <div class="package-contents">
+                            <a name="AuthAbstractor/Model/ChallengeDefinition.php" id="AuthAbstractor/Model/ChallengeDefinition.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Model/ChallengeDefinition.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>23</td>
+                                            <td>Will later be used to specify a maximum number of attempts per
+challenge.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="AuthAbstractor/Model/IAuthenticationProcess.php" id="AuthAbstractor/Model/IAuthenticationProcess.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Model/IAuthenticationProcess.php
+                                <small style="float: right;padding-right: 10px;">5</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>18</td>
+                                            <td>Use interfaces or scalars for ArrayObject, and Status.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>18</td>
+                                            <td>It is heavily coupled with specific challenges (e.g. getMember()).</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>49</td>
+                                            <td>The maximum number of failed attempts should be per challenge and
+not per authentication process.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>56</td>
+                                            <td>Should be able to return null if the user is not logged-in!</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>85</td>
+                                            <td>Delete, since getMember() already exists.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="AuthAbstractor/Model/IMember.php" id="AuthAbstractor/Model/IMember.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Model/IMember.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>17</td>
+                                            <td>Should it be id instead?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="AuthAbstractor/Model/IAuthenticationKernel.php" id="AuthAbstractor/Model/IAuthenticationKernel.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Model/IAuthenticationKernel.php
+                                <small style="float: right;padding-right: 10px;">3</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>13</td>
+                                            <td>Make it PSR-15.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>36</td>
+                                            <td>Make it PSR-15 oompliant.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>36</td>
+                                            <td>Should accept an IAuthenticationProcess parameter instead.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                    <div class="package-contents">
+                            <a name="AuthAbstractor/Model/IU2fRegistration.php" id="AuthAbstractor/Model/IU2fRegistration.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Model/IU2fRegistration.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>14</td>
+                                            <td>Add getOwnerId()?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="AuthAbstractor/Model/PersistOperation.php" id="AuthAbstractor/Model/PersistOperation.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Model/PersistOperation.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>18</td>
+                                            <td>Use an interface?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                        <div class="package-contents">
+                            <a name="AuthAbstractor/Controller/AuthenticationKernel.php" id="AuthAbstractor/Controller/AuthenticationKernel.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Controller/AuthenticationKernel.php
+                                <small style="float: right;padding-right: 10px;">6</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>46</td>
+                                            <td>Make it implement PSR-15.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>63</td>
+                                            <td>Ensure container keeps and reuses objects.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>63</td>
+                                            <td>Form validation doesn&#039;t work. Delete?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>63</td>
+                                            <td>Make it possible to specify an anonymous challenge.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>159</td>
+                                            <td>Should check type before instantiating authentifier.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>159</td>
+                                            <td>Move somewhere else?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="package-contents">
+                            <a name="AuthAbstractor/Implementation/TestingTokenStorage.php" id="AuthAbstractor/Implementation/TestingTokenStorage.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/Implementation/TestingTokenStorage.php
+                                <small style="float: right;padding-right: 10px;">3</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>18</td>
+                                            <td>Add one using sessions?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>40</td>
+                                            <td>Should check that the folder has been deleted.</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>58</td>
+                                            <td>Check for case where file_put_contents returns false.</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                            <div class="package-contents">
+                            <a name="AuthAbstractor/U2f/U2fAuthenticationManager.php" id="AuthAbstractor/U2f/U2fAuthenticationManager.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                AuthAbstractor/U2f/U2fAuthenticationManager.php
+                                <small style="float: right;padding-right: 10px;">2</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>45</td>
+                                            <td>Use a scalar array instead?</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td>TODO</td>
+                                            <td>75</td>
+                                            <td>Use scalar arrays instead?</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+        </div>
+    </section>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/LM.html">\LM</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on May 1st, 2018 at 02:01.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
