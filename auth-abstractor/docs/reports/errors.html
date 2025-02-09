@@ -1,0 +1,2968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; Compilation errors
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/LM.html">\LM</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">276</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">48</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">6</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">Navigation</li>
+                                                                            <li><a href="#Common/Model/ArrayObject.php"><i class="icon-file"></i> Common/Model/ArrayObject.php</a></li>
+                                                                                                    <li><a href="#Common/Model/StringObject.php"><i class="icon-file"></i> Common/Model/StringObject.php</a></li>
+                                                                                                    <li><a href="#Common/Model/IntegerObject.php"><i class="icon-file"></i> Common/Model/IntegerObject.php</a></li>
+                                                                                                    <li><a href="#Common/Model/BooleanObject.php"><i class="icon-file"></i> Common/Model/BooleanObject.php</a></li>
+                                                                                                    <li><a href="#Common/DataStructure/IImmutableList.php"><i class="icon-file"></i> Common/DataStructure/IImmutableList.php</a></li>
+                                                                                                    <li><a href="#Common/DataStructure/TypedList.php"><i class="icon-file"></i> Common/DataStructure/TypedList.php</a></li>
+                                                                                                    <li><a href="#Common/DataStructure/ITypedMap.php"><i class="icon-file"></i> Common/DataStructure/ITypedMap.php</a></li>
+                                                                                                    <li><a href="#Common/DataStructure/TypedMap.php"><i class="icon-file"></i> Common/DataStructure/TypedMap.php</a></li>
+                                                                                                    <li><a href="#Common/Enum/AbstractEnum.php"><i class="icon-file"></i> Common/Enum/AbstractEnum.php</a></li>
+                                                                                                    <li><a href="#Common/Enum/IEnum.php"><i class="icon-file"></i> Common/Enum/IEnum.php</a></li>
+                                                                                                    <li><a href="#Common/Enum/Scalar.php"><i class="icon-file"></i> Common/Enum/Scalar.php</a></li>
+                                                                                                    <li><a href="#Common/Type/Type.php"><i class="icon-file"></i> Common/Type/Type.php</a></li>
+                                                                                                    <li><a href="#Common/Type/TypeCheckerTrait.php"><i class="icon-file"></i> Common/Type/TypeCheckerTrait.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IAuthenticationCallback.php"><i class="icon-file"></i> AuthAbstractor/Model/IAuthenticationCallback.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/INamedU2fRegistration.php"><i class="icon-file"></i> AuthAbstractor/Model/INamedU2fRegistration.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IMailer.php"><i class="icon-file"></i> AuthAbstractor/Model/IMailer.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IAuthentifierResponse.php"><i class="icon-file"></i> AuthAbstractor/Model/IAuthentifierResponse.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/ChallengeDefinition.php"><i class="icon-file"></i> AuthAbstractor/Model/ChallengeDefinition.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/AuthenticationProcess.php"><i class="icon-file"></i> AuthAbstractor/Model/AuthenticationProcess.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IChallengeResponse.php"><i class="icon-file"></i> AuthAbstractor/Model/IChallengeResponse.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IAuthenticationProcess.php"><i class="icon-file"></i> AuthAbstractor/Model/IAuthenticationProcess.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IMember.php"><i class="icon-file"></i> AuthAbstractor/Model/IMember.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IAuthenticationKernel.php"><i class="icon-file"></i> AuthAbstractor/Model/IAuthenticationKernel.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/U2fRegistrationRequest.php"><i class="icon-file"></i> AuthAbstractor/Model/U2fRegistrationRequest.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/IU2fRegistration.php"><i class="icon-file"></i> AuthAbstractor/Model/IU2fRegistration.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Model/PersistOperation.php"><i class="icon-file"></i> AuthAbstractor/Model/PersistOperation.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Form/Constraint/ValidNewPasswordValidator.php"><i class="icon-file"></i> AuthAbstractor/Form/Constraint/ValidNewPasswordValidator.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Form/Constraint/ValidNewPassword.php"><i class="icon-file"></i> AuthAbstractor/Form/Constraint/ValidNewPassword.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Controller/AuthenticationKernel.php"><i class="icon-file"></i> AuthAbstractor/Controller/AuthenticationKernel.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Controller/AuthenticationProcessHandler.php"><i class="icon-file"></i> AuthAbstractor/Controller/AuthenticationProcessHandler.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Test/KernelMocker.php"><i class="icon-file"></i> AuthAbstractor/Test/KernelMocker.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Exception/FinishedProcessException.php"><i class="icon-file"></i> AuthAbstractor/Exception/FinishedProcessException.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Exception/NoRegisteredU2fTokenException.php"><i class="icon-file"></i> AuthAbstractor/Exception/NoRegisteredU2fTokenException.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Validator/PasswordValidator.php"><i class="icon-file"></i> AuthAbstractor/Validator/PasswordValidator.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Enum/AuthenticationProcess/Status.php"><i class="icon-file"></i> AuthAbstractor/Enum/AuthenticationProcess/Status.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Enum/Persistence/Operation.php"><i class="icon-file"></i> AuthAbstractor/Enum/Persistence/Operation.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/TestMailer.php"><i class="icon-file"></i> AuthAbstractor/Implementation/TestMailer.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/ApplicationConfiguration.php"><i class="icon-file"></i> AuthAbstractor/Implementation/ApplicationConfiguration.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/TestingTokenStorage.php"><i class="icon-file"></i> AuthAbstractor/Implementation/TestingTokenStorage.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/Callback.php"><i class="icon-file"></i> AuthAbstractor/Implementation/Callback.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/NamedU2fRegistration.php"><i class="icon-file"></i> AuthAbstractor/Implementation/NamedU2fRegistration.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/U2fRegistration.php"><i class="icon-file"></i> AuthAbstractor/Implementation/U2fRegistration.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/Member.php"><i class="icon-file"></i> AuthAbstractor/Implementation/Member.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/ChallengeResponse.php"><i class="icon-file"></i> AuthAbstractor/Implementation/ChallengeResponse.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/EmptyCallback.php"><i class="icon-file"></i> AuthAbstractor/Implementation/EmptyCallback.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Implementation/AuthentifierResponse.php"><i class="icon-file"></i> AuthAbstractor/Implementation/AuthentifierResponse.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/U2f/U2fAuthenticationManager.php"><i class="icon-file"></i> AuthAbstractor/U2f/U2fAuthenticationManager.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/U2f/U2fServerGenerator.php"><i class="icon-file"></i> AuthAbstractor/U2f/U2fServerGenerator.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/U2f/U2fRegistrationManager.php"><i class="icon-file"></i> AuthAbstractor/U2f/U2fRegistrationManager.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/U2fRegistrationChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/U2fRegistrationChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/NamedU2fRegistrationChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/NamedU2fRegistrationChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/EmptyChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/EmptyChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/PasswordUpdateChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/PasswordUpdateChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/EmailChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/EmailChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/U2fChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/U2fChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/IChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/IChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/CredentialRegistrationChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/CredentialRegistrationChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/CredentialChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/CredentialChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/PasswordChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/PasswordChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/ExistingUsernameChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/ExistingUsernameChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Challenge/EmailRegistrationChallenge.php"><i class="icon-file"></i> AuthAbstractor/Challenge/EmailRegistrationChallenge.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Factory/U2fRegistrationFactory.php"><i class="icon-file"></i> AuthAbstractor/Factory/U2fRegistrationFactory.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Factory/AuthenticationProcessFactory.php"><i class="icon-file"></i> AuthAbstractor/Factory/AuthenticationProcessFactory.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Configuration/IApplicationConfiguration.php"><i class="icon-file"></i> AuthAbstractor/Configuration/IApplicationConfiguration.php</a></li>
+                                                                                                    <li><a href="#AuthAbstractor/Mocker/U2fMocker.php"><i class="icon-file"></i> AuthAbstractor/Mocker/U2fMocker.php</a></li>
+                                                                    </ul>
+        </div>
+
+        <div class="span10 offset2">
+            <ul class="breadcrumb">
+                <li><a href="../"><i class="icon-remove-sign"></i></a><span class="divider">\</span></li>
+                <li>Compilation Errors</li>
+            </ul>
+
+            
+                            <div class="package-contents">
+                                            <a name="Common/Model/ArrayObject.php" id="Common/Model/ArrayObject.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Model/ArrayObject.php
+                            <small style="float: right;padding-right: 10px;">28</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>35</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>61</td>
+                                        <td>Argument $type is missing from the Docblock of add</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>61</td>
+                                        <td>Name of argument $type does not match with the DocBlock&#039;s name $value in add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>61</td>
+                                        <td>The type hint of the argument is incorrect for the type definition of the @param tag with argument $type in add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>73</td>
+                                        <td>Argument $type is missing from the Docblock of checkItemsType</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>73</td>
+                                        <td>No summary for method checkItemsType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>87</td>
+                                        <td>Argument $key is missing from the Docblock of addWithkey</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>87</td>
+                                        <td>Argument $value is missing from the Docblock of addWithkey</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>87</td>
+                                        <td>Argument $type is missing from the Docblock of addWithkey</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>87</td>
+                                        <td>No summary for method addWithkey()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>99</td>
+                                        <td>No summary for method hasNextItem()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>108</td>
+                                        <td>Argument $type is missing from the Docblock of get</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>108</td>
+                                        <td>Name of argument $type does not match with the DocBlock&#039;s name $key in get()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>108</td>
+                                        <td>The type hint of the argument is incorrect for the type definition of the @param tag with argument $type in get()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>108</td>
+                                        <td>No summary for method get()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>119</td>
+                                        <td>Argument $class is missing from the Docblock of getCurrentItem</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>119</td>
+                                        <td>No summary for method getCurrentItem()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>130</td>
+                                        <td>No summary for method setToNextItem()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>138</td>
+                                        <td>No summary for method getSize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>146</td>
+                                        <td>Argument $type is missing from the Docblock of toArray</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>146</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>155</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>164</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>164</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>22</td>
+                                        <td>No summary for property $currentItemIndex</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $items</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>28</td>
+                                        <td>No summary for property $type</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Model/StringObject.php" id="Common/Model/StringObject.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Model/StringObject.php
+                            <small style="float: right;padding-right: 10px;">7</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>29</td>
+                                        <td>No summary for method toString()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>37</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>42</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>42</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>16</td>
+                                        <td>No summary for property $string</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Model/IntegerObject.php" id="Common/Model/IntegerObject.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Model/IntegerObject.php
+                            <small style="float: right;padding-right: 10px;">7</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>29</td>
+                                        <td>No summary for method toInteger()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>34</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>39</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>39</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>16</td>
+                                        <td>No summary for property $integer</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Model/BooleanObject.php" id="Common/Model/BooleanObject.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Model/BooleanObject.php
+                            <small style="float: right;padding-right: 10px;">6</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>36</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>41</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>41</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>16</td>
+                                        <td>No summary for property $boolean</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/DataStructure/IImmutableList.php" id="Common/DataStructure/IImmutableList.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/DataStructure/IImmutableList.php
+                            <small style="float: right;padding-right: 10px;">2</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for method append()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/DataStructure/TypedList.php" id="Common/DataStructure/TypedList.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/DataStructure/TypedList.php
+                            <small style="float: right;padding-right: 10px;">11</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>27</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>37</td>
+                                        <td>Argument $item is missing from the Docblock of append</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>37</td>
+                                        <td>No summary for method append()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>45</td>
+                                        <td>No summary for method count()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>50</td>
+                                        <td>No summary for method getIterator()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>55</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>60</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>60</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>16</td>
+                                        <td>No summary for property $items</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for property $type</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/DataStructure/ITypedMap.php" id="Common/DataStructure/ITypedMap.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/DataStructure/ITypedMap.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/DataStructure/TypedMap.php" id="Common/DataStructure/TypedMap.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/DataStructure/TypedMap.php
+                            <small style="float: right;padding-right: 10px;">8</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>28</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>42</td>
+                                        <td>No summary for method get()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>53</td>
+                                        <td>No summary for method getSize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>62</td>
+                                        <td>No summary for method has()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>95</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>103</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>22</td>
+                                        <td>No summary for property $items</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Enum/AbstractEnum.php" id="Common/Enum/AbstractEnum.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Enum/AbstractEnum.php
+                            <small style="float: right;padding-right: 10px;">9</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>30</td>
+                                        <td>No summary for method getConstants()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>51</td>
+                                        <td>No summary for method getValue()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>56</td>
+                                        <td>Argument $enum is missing from the Docblock of is</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>56</td>
+                                        <td>No summary for method is()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>68</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>73</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>73</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for property $value</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Enum/IEnum.php" id="Common/Enum/IEnum.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Enum/IEnum.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>17</td>
+                                        <td>No summary for method getValue()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for method is()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Enum/Scalar.php" id="Common/Enum/Scalar.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Enum/Scalar.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Type/Type.php" id="Common/Type/Type.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Type/Type.php
+                            <small style="float: right;padding-right: 10px;">8</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>Argument $type is missing from the Docblock of __construct</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>37</td>
+                                        <td>No summary for method isArrayType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>45</td>
+                                        <td>No summary for method isBoolType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>53</td>
+                                        <td>No summary for method isClassOrInterfaceName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>61</td>
+                                        <td>No summary for method isIntegerType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>69</td>
+                                        <td>No summary for method isStringType()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Common/Type/TypeCheckerTrait.php" id="Common/Type/TypeCheckerTrait.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Common/Type/TypeCheckerTrait.php
+                            <small style="float: right;padding-right: 10px;">6</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>22</td>
+                                        <td>No summary for method isArrayType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for method isBoolType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>40</td>
+                                        <td>No summary for method isClassOrInterfaceName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method isIntegerType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>58</td>
+                                        <td>No summary for method isStringType()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IAuthenticationCallback.php" id="AuthAbstractor/Model/IAuthenticationCallback.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IAuthenticationCallback.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/INamedU2fRegistration.php" id="AuthAbstractor/Model/INamedU2fRegistration.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/INamedU2fRegistration.php
+                            <small style="float: right;padding-right: 10px;">2</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IMailer.php" id="AuthAbstractor/Model/IMailer.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IMailer.php
+                            <small style="float: right;padding-right: 10px;">2</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>16</td>
+                                        <td>No summary for method send()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IAuthentifierResponse.php" id="AuthAbstractor/Model/IAuthentifierResponse.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IAuthentifierResponse.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/ChallengeDefinition.php" id="AuthAbstractor/Model/ChallengeDefinition.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/ChallengeDefinition.php
+                            <small style="float: right;padding-right: 10px;">11</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>Argument $classname is missing from the Docblock of __construct</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>Argument $number is missing from the Docblock of __construct</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>42</td>
+                                        <td>No summary for method getClassname()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>47</td>
+                                        <td>No summary for method getNumber()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>52</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>60</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>60</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for property $classname</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>29</td>
+                                        <td>No summary for property $number</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/AuthenticationProcess.php" id="AuthAbstractor/Model/AuthenticationProcess.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/AuthenticationProcess.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IChallengeResponse.php" id="AuthAbstractor/Model/IChallengeResponse.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IChallengeResponse.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IAuthenticationProcess.php" id="AuthAbstractor/Model/IAuthenticationProcess.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IAuthenticationProcess.php
+                            <small style="float: right;padding-right: 10px;">17</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for method getChallenges()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>30</td>
+                                        <td>No summary for method getCurrentChallenge()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method getMaxNFailedAttempts()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>56</td>
+                                        <td>No summary for method getMember()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>63</td>
+                                        <td>No summary for method getNFailedAttempts()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>70</td>
+                                        <td>No summary for method getPersistOperations()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>77</td>
+                                        <td>No summary for method getStatus()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>85</td>
+                                        <td>No summary for method getUsername()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>94</td>
+                                        <td>No summary for method incrementNFailedAttempts()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>100</td>
+                                        <td>No summary for method isFailed()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>106</td>
+                                        <td>No summary for method isFinished()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>112</td>
+                                        <td>No summary for method isOngoing()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>118</td>
+                                        <td>No summary for method isSucceeded()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>125</td>
+                                        <td>No summary for method resetNFailedAttempts()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>133</td>
+                                        <td>No summary for method setNFailedAttempts()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>140</td>
+                                        <td>No summary for method setToNextChallenge()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IMember.php" id="AuthAbstractor/Model/IMember.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IMember.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>17</td>
+                                        <td>No summary for method getUsername()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for method getHashedPassword()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IAuthenticationKernel.php" id="AuthAbstractor/Model/IAuthenticationKernel.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IAuthenticationKernel.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/U2fRegistrationRequest.php" id="AuthAbstractor/Model/U2fRegistrationRequest.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/U2fRegistrationRequest.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/IU2fRegistration.php" id="AuthAbstractor/Model/IU2fRegistration.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/IU2fRegistration.php
+                            <small style="float: right;padding-right: 10px;">5</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for method getAttestationCertificate()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for method getCounter()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method getKeyHandle()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>40</td>
+                                        <td>No summary for method getPublicKey()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Model/PersistOperation.php" id="AuthAbstractor/Model/PersistOperation.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Model/PersistOperation.php
+                            <small style="float: right;padding-right: 10px;">9</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>41</td>
+                                        <td>No summary for method getType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>50</td>
+                                        <td>No summary for method getObject()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>55</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>63</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>63</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $object</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>24</td>
+                                        <td>No summary for property $operation</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Form/Constraint/ValidNewPasswordValidator.php" id="AuthAbstractor/Form/Constraint/ValidNewPasswordValidator.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Form/Constraint/ValidNewPasswordValidator.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Form/Constraint/ValidNewPassword.php" id="AuthAbstractor/Form/Constraint/ValidNewPassword.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Form/Constraint/ValidNewPassword.php
+                            <small style="float: right;padding-right: 10px;">5</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>40</td>
+                                        <td>No summary for method getConfig()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>51</td>
+                                        <td>No summary for method getPwdValidator()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $appConfig</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>24</td>
+                                        <td>No summary for property $pwdValidator</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Controller/AuthenticationKernel.php" id="AuthAbstractor/Controller/AuthenticationKernel.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Controller/AuthenticationKernel.php
+                            <small style="float: right;padding-right: 10px;">8</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>63</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>159</td>
+                                        <td>Argument $httpRequest is missing from the Docblock of processHttpRequest</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>159</td>
+                                        <td>Argument $process is missing from the Docblock of processHttpRequest</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>159</td>
+                                        <td>Argument $callback is missing from the Docblock of processHttpRequest</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>159</td>
+                                        <td>No summary for method processHttpRequest()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for property $appConfig</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>52</td>
+                                        <td>No summary for property $container</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Controller/AuthenticationProcessHandler.php" id="AuthAbstractor/Controller/AuthenticationProcessHandler.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Controller/AuthenticationProcessHandler.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Test/KernelMocker.php" id="AuthAbstractor/Test/KernelMocker.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Test/KernelMocker.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Exception/FinishedProcessException.php" id="AuthAbstractor/Exception/FinishedProcessException.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Exception/FinishedProcessException.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Exception/NoRegisteredU2fTokenException.php" id="AuthAbstractor/Exception/NoRegisteredU2fTokenException.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Exception/NoRegisteredU2fTokenException.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Validator/PasswordValidator.php" id="AuthAbstractor/Validator/PasswordValidator.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Validator/PasswordValidator.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Enum/AuthenticationProcess/Status.php" id="AuthAbstractor/Enum/AuthenticationProcess/Status.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Enum/AuthenticationProcess/Status.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Enum/Persistence/Operation.php" id="AuthAbstractor/Enum/Persistence/Operation.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Enum/Persistence/Operation.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/TestMailer.php" id="AuthAbstractor/Implementation/TestMailer.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/TestMailer.php
+                            <small style="float: right;padding-right: 10px;">7</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>9</td>
+                                        <td>No summary for class \LM\AuthAbstractor\Implementation\TestMailer</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>14</td>
+                                        <td>Argument $to is missing from the Docblock of send</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>14</td>
+                                        <td>Argument $body is missing from the Docblock of send</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>14</td>
+                                        <td>No summary for method send()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method getLastEmailBody()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>12</td>
+                                        <td>No summary for property $lastEmailBody</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/ApplicationConfiguration.php" id="AuthAbstractor/Implementation/ApplicationConfiguration.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/ApplicationConfiguration.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/TestingTokenStorage.php" id="AuthAbstractor/Implementation/TestingTokenStorage.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/TestingTokenStorage.php
+                            <small style="float: right;padding-right: 10px;">13</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>40</td>
+                                        <td>No summary for method __destruct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>46</td>
+                                        <td>Argument $tokenId is missing from the Docblock of getToken</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>46</td>
+                                        <td>No summary for method getToken()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>58</td>
+                                        <td>Argument $tokenId is missing from the Docblock of setToken</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>58</td>
+                                        <td>Argument $token is missing from the Docblock of setToken</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>58</td>
+                                        <td>No summary for method setToken()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>63</td>
+                                        <td>Argument $tokenId is missing from the Docblock of removeToken</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>63</td>
+                                        <td>No summary for method removeToken()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>72</td>
+                                        <td>Argument $tokenId is missing from the Docblock of hasToken</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>72</td>
+                                        <td>No summary for method hasToken()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $dataDir</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/Callback.php" id="AuthAbstractor/Implementation/Callback.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/Callback.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/NamedU2fRegistration.php" id="AuthAbstractor/Implementation/NamedU2fRegistration.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/NamedU2fRegistration.php
+                            <small style="float: right;padding-right: 10px;">18</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>38</td>
+                                        <td>Name of argument $name does not match with the DocBlock&#039;s name $publicKey in __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>38</td>
+                                        <td>The type hint of the argument is incorrect for the type definition of the @param tag with argument $name in __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>38</td>
+                                        <td>Argument $publicKey is missing from the Docblock of __construct</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>38</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>52</td>
+                                        <td>No summary for method getAttestationCertificate()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>57</td>
+                                        <td>No summary for method getCounter()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>62</td>
+                                        <td>No summary for method getKeyHandle()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>67</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>72</td>
+                                        <td>No summary for method getPublicKey()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>77</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>88</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>88</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $attestationCertificate</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for property $counter</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $keyHandle</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>24</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>27</td>
+                                        <td>No summary for property $publicKey</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/U2fRegistration.php" id="AuthAbstractor/Implementation/U2fRegistration.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/U2fRegistration.php
+                            <small style="float: right;padding-right: 10px;">13</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>35</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>47</td>
+                                        <td>No summary for method getAttestationCertificate()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>52</td>
+                                        <td>No summary for method getCounter()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>57</td>
+                                        <td>No summary for method getKeyHandle()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>62</td>
+                                        <td>No summary for method getPublicKey()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>67</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>77</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>77</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $attestationCertificate</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for property $counter</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $keyHandle</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>24</td>
+                                        <td>No summary for property $publicKey</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/Member.php" id="AuthAbstractor/Implementation/Member.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/Member.php
+                            <small style="float: right;padding-right: 10px;">9</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>27</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>36</td>
+                                        <td>No summary for method getHashedPassword()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>44</td>
+                                        <td>No summary for method getUsername()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method serialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>57</td>
+                                        <td>Argument $serialized is missing from the Docblock of unserialize</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>57</td>
+                                        <td>No summary for method unserialize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>17</td>
+                                        <td>No summary for property $hashedPassword</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $username</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/ChallengeResponse.php" id="AuthAbstractor/Implementation/ChallengeResponse.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/ChallengeResponse.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/EmptyCallback.php" id="AuthAbstractor/Implementation/EmptyCallback.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/EmptyCallback.php
+                            <small style="float: right;padding-right: 10px;">7</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>Argument $authProcess is missing from the Docblock of handleFailedProcess</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for method handleFailedProcess()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>Argument $authProcess is missing from the Docblock of handleSuccessfulProcess</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for method handleSuccessfulProcess()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for property $diactoros</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Implementation/AuthentifierResponse.php" id="AuthAbstractor/Implementation/AuthentifierResponse.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Implementation/AuthentifierResponse.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/U2f/U2fAuthenticationManager.php" id="AuthAbstractor/U2f/U2fAuthenticationManager.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/U2f/U2fAuthenticationManager.php
+                            <small style="float: right;padding-right: 10px;">6</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>28</td>
+                                        <td>Argument $u2fRegistrationFactory is missing from the Docblock of __construct</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>28</td>
+                                        <td>Argument $u2fServerGenerator is missing from the Docblock of __construct</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>28</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for property $u2fRegistrationFactory</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for property $u2fServerGenerator</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/U2f/U2fServerGenerator.php" id="AuthAbstractor/U2f/U2fServerGenerator.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/U2f/U2fServerGenerator.php
+                            <small style="float: right;padding-right: 10px;">4</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for method getServer()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for property $appConfig</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/U2f/U2fRegistrationManager.php" id="AuthAbstractor/U2f/U2fRegistrationManager.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/U2f/U2fRegistrationManager.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/U2fRegistrationChallenge.php" id="AuthAbstractor/Challenge/U2fRegistrationChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/U2fRegistrationChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/NamedU2fRegistrationChallenge.php" id="AuthAbstractor/Challenge/NamedU2fRegistrationChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/NamedU2fRegistrationChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/EmptyChallenge.php" id="AuthAbstractor/Challenge/EmptyChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/EmptyChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/PasswordUpdateChallenge.php" id="AuthAbstractor/Challenge/PasswordUpdateChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/PasswordUpdateChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/EmailChallenge.php" id="AuthAbstractor/Challenge/EmailChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/EmailChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/U2fChallenge.php" id="AuthAbstractor/Challenge/U2fChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/U2fChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/IChallenge.php" id="AuthAbstractor/Challenge/IChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/IChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/CredentialRegistrationChallenge.php" id="AuthAbstractor/Challenge/CredentialRegistrationChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/CredentialRegistrationChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/CredentialChallenge.php" id="AuthAbstractor/Challenge/CredentialChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/CredentialChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/PasswordChallenge.php" id="AuthAbstractor/Challenge/PasswordChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/PasswordChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/ExistingUsernameChallenge.php" id="AuthAbstractor/Challenge/ExistingUsernameChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/ExistingUsernameChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Challenge/EmailRegistrationChallenge.php" id="AuthAbstractor/Challenge/EmailRegistrationChallenge.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Challenge/EmailRegistrationChallenge.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Factory/U2fRegistrationFactory.php" id="AuthAbstractor/Factory/U2fRegistrationFactory.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Factory/U2fRegistrationFactory.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Factory/AuthenticationProcessFactory.php" id="AuthAbstractor/Factory/AuthenticationProcessFactory.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Factory/AuthenticationProcessFactory.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Configuration/IApplicationConfiguration.php" id="AuthAbstractor/Configuration/IApplicationConfiguration.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Configuration/IApplicationConfiguration.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="AuthAbstractor/Mocker/U2fMocker.php" id="AuthAbstractor/Mocker/U2fMocker.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            AuthAbstractor/Mocker/U2fMocker.php
+                            <small style="float: right;padding-right: 10px;">6</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>92</td>
+                                        <td>No summary for method get()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>101</td>
+                                        <td>No summary for method getU2fRegistrations()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>110</td>
+                                        <td>No summary for method getU2fRegistrationsOnly()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $u2fRegistrations</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                    </div>
+    </section>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/LM.html">\LM</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on May 1st, 2018 at 02:01.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

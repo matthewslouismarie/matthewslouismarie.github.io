@@ -1,0 +1,47 @@
+ul.source-tree {
+    &, & ul {
+        list-style-type: none;
+        padding-left: $padding-base-horizontal;
+    }
+
+    a {
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .glyphicon {
+        color: $gray-light;
+
+        &.covered {
+            color: $green-light;
+        }
+
+        &.semi-covered {
+            color: $yellow-light;
+        }
+
+        &.uncovered {
+            color: $red-light;
+        }
+    }
+
+    .selected > a {
+        font-weight: bold;
+    }
+
+    .selected > a .glyphicon {
+        color: inherit;
+
+        &.covered {
+            color: $green;
+        }
+
+        &.semi-covered {
+            color: $yellow;
+        }
+
+        &.uncovered {
+            color: $red;
+        }
+    }
+}

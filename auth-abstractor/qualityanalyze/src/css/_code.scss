@@ -1,0 +1,55 @@
+ol.code {
+    $code-border-width: 2px;
+
+    & > li {
+        border-left: $code-border-width solid $gray-lighter;
+        padding-left: $padding-xs-horizontal;
+        white-space: pre-wrap;
+        font-family: monospace;
+    }
+
+    & > li.highlight:hover,
+    & > li:hover {
+        background-color: $gray-lighter;
+    }
+
+    & > li.highlight {
+        background-color: $gray-verylight;
+    }
+
+    & > li.covered {
+        border-left-color: $green;
+
+        &:hover {
+            background-color: $green-lighter;
+        }
+    }
+
+    & > li.uncovered {
+        border-left-color: $red;
+
+        &:hover {
+            background-color: $red-lighter;
+        }
+    }
+
+    .string, .number {
+        color: $green-dark;
+    }
+    .keyword {
+        color: $yellow-dark;
+        font-weight: bold;
+    }
+    .variable, .name {
+        color: $blue-dark;
+    }
+    .comment {
+        color: $gray;
+    }
+    .operator {
+        color: $red-dark;
+    }
+    .uncought {
+        background-color: $red-light;
+    }
+}
