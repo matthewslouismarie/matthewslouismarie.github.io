@@ -239,10 +239,9 @@ dd {
 }
 
 .pf-nav {
-    display: inline-block;
-    vertical-align: top;
-    padding: 4rem 0 0 0;
     margin-bottom: 8rem;
+    text-align: center;
+    padding: 4rem 0 0 0;
 }
 
 .pf-nav > .list {
@@ -419,6 +418,16 @@ dd {
     text-align: center;
 }
 
+.img-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-gallery > .img {
+    width: 100%;
+    height: auto;
+}
+
 @media print {
     .curriculum-vitae > .frame.-side {
         overflow: hidden;
@@ -436,6 +445,23 @@ dd {
 }
 
 @media (min-width: 1200px) {
+    .img-gallery {
+        flex-direction: row;
+    }
+
+    .img-gallery > .img.-width40 {
+        width: 40%;
+    }
+
+    .img-gallery > .img.-width60 {
+        width: 60%;
+    }
+
+    .pf-nav {
+        display: inline-block;
+        vertical-align: top;
+    }
+
     .pf-achievements > .item > .white {
         display: inline-block;
         vertical-align: middle;
@@ -443,7 +469,7 @@ dd {
         background-color: #ffffff;
     }
 
-    .pf-figure {
+    .pf-figure.-float {
         float: left;
         padding-left: 1rem;
         padding-right: 2rem;
@@ -452,9 +478,10 @@ dd {
 
     .pf-figure.-half {
         width: 50%;
+        margin: auto;
     }
 
-    .pf-article.-rightaligned > .pf-figure {
+    .pf-article.-rightaligned > .pf-figure.-float {
         float: right;
     }
 }
