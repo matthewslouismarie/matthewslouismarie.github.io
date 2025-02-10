@@ -284,9 +284,12 @@ dd {
 }
 
 .pf-article > .title {
-    text-align: right;
-    padding: 0 0 1rem 0;
+    padding: 0 0 1rem 2rem;
     font-size: 3rem;
+}
+
+.pf-article.-rightaligned > .title {
+    text-align: right;
 }
 
 .pf-article > .title.-center {
@@ -382,7 +385,7 @@ dd {
     margin-top: 2rem;
 }
 
-.pf-figure > .img {
+.pf-figure.-half > .img {
     height: auto;
     width: 100%;
 }
@@ -441,10 +444,17 @@ dd {
     }
 
     .pf-figure {
-        float: right;
-        width: 50%;
+        float: left;
         padding-left: 1rem;
         padding-right: 2rem;
         margin-top: 0;
+    }
+
+    .pf-figure.-half {
+        width: 50%;
+    }
+
+    .pf-article.-rightaligned > .pf-figure {
+        float: right;
     }
 }

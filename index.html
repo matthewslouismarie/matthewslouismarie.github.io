@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Louis-Marie Matthews - Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=2">
         <meta name="robots" content="noindex">
     </head>
     <body>
@@ -21,6 +21,20 @@
             ></nav>
         </header>
     
+        <article class="pf-article -bordered">
+            <h1 class="title">Analysis of the lvgl embedded library</h1>
+            <figure class="pf-figure -left">
+                <img alt="Sonarqube" class="img" src="sonarqube-logo.png">
+            </figure>
+            <p class="pf-description">L’explosion du nombre d’objets connectés et leur omniprésence grandissante n’a pas encore abouti à une prise en compte des risques liés à la cybersécurité. Les logiciels embarqués sont bien souvent pauvrement conçus et testés. En témoigne un rapport estimant que les routeurs TP-Link, permettant à 65% des Américains d’accéder à Internet, présentent d’importantes vulnérabilités et peuvent être piratés.</p>
+            <!-- <p class="pf-description">Le fait que beaucoup de sites imposent de telles règles nuit grandement à l’expérience utilisateur et, <i>in fine</i>, à la sécurité (utilisation du même mot de passe, écriture sur un post-it…).</p> -->
+            <!-- <p class="pf-description">La technologie U2F (maintenant comprise dans FIDO2) permet de renforcer grandement la sécurité en ajoutant un deuxième moyen d’authentification non vulnerable aux attaques MitM et au phishing. Associée à des règles moins contraignantes pour les mots de passe, elle permet d’améliorer à la fois la sécurité et l’ergonomie de l’authentification.</p> -->
+            <p class="pf-description">Dans ce rapport, je présente avec mon groupe l’analyse statique de la librairie LVGL, un des projets GitHub les plus populaires et la principale solution pour créer des interfaces graphiques embarquées. Après une description du contexte et des intérêts (et limitations) de l’analyse statique, je détaille point par point les différentes catégories de problèmes identifiés par SonarQube dans le code de LVGL. J’explique également l’installation de SonarQube avec Docker, en local.</p>
+            <ul class="pf-link-list">
+                <li class="item"><a class="link" href="sonarqube_report.pdf" target="_blank"><img alt="Mémoire de licence" class="img" src="pdf-files-icon.svg"><span class="text">Analysis of the lvgl embedded library</span></a></li>
+            </ul>
+        </article>
+    
         <!-- <article class="pf-article -bordered">
             <h1 class="title -center"><img alt="Le Marché du Pax" class="img" src="lmdp.jpg" style="width: 20rem; height: auto;"></h1>
             <p class="pf-description">Mon temps à l’armée m’a permis d’<strong>identifier les besoins</strong> récurrents en terme de matériel personnel, par ma propre expérience et en discutant avec mes collègues. Armé de ce savoir, j’ai créé mon propre site Internet d’e-commerce principalement dédié aux militaires.</p>
@@ -36,7 +50,7 @@
             </ul>
         </article> -->
 
-        <article class="pf-article -bordered">
+        <article class="pf-article -rightaligned -bordered">
             <h1 class="title -center"><img alt="Mapping-Fusion" class="img" src="mapping-fusion-logo.svg" style="width: 20rem; height: auto;"></h1>
             <p class="pf-description">En collaboration avec un ami graphiste, j’ai développé un site web dedié à l’univers du modding GoldSource.</p>
             <p class="pf-description">Plutôt que d’utiliser un CMS ou une framework, j’ai décidé de créer le site en partant <strong>depuis zéro</strong> en utilisant uniquement des technologies comme PHP, MariaDB et Docker. Cela m’a permis plus de contrôle sur le code, et ainsi de fortement limiter sa taille et de faciliter sa maintenance future, ainsi que d’optimiser les temps de traitement et la taille sur le disque.</p>
@@ -53,9 +67,9 @@
             </ul>
         </article>
     
-        <article class="pf-article">
+        <article class="pf-article -rightaligned">
             <h1 class="title">U2F: Complex Passwords are unnecessary</h1>
-            <figure class="pf-figure">
+            <figure class="pf-figure -half">
                 <img alt="NASA-TLX of SPWD+U2F and CPWD" class="img" src="nasa_tlx.png">
                 <caption class="text">NASA-TLX scores of SPWD+U2F (Simple Password with U2F) and CPWD (Complex Password).</caption>
             </figure>
@@ -76,6 +90,7 @@
                 <li class="item"><a class="link" href="u2f_dundee_php_meetup.pdf" target="_blank"><img alt="Présentation d’U2F au Dundee PHP Meetup" class="img" src="slideshow-line-icon.svg"><span class="text">Présentation d’U2F au Dundee PHP Meetup</span></a></li>
             </ul>
         </article>
+
         <article class="pf-article">
             <h1 class="title -background" style="background-image: url(http://scmapdb.wdfiles.com/local--files/map:crossed-paths:the-complete-series/20220907215054_1.jpg)"><img alt="Crossed Paths" class="img" src="crossed_paths_logo.png"></h1>
             <p class="pf-intro">
@@ -93,7 +108,7 @@
                 <li class="item"><span class="text">406 commits</span><img alt="GitHub" class="img" src="github-icon.svg"><span class="white" style="width: 60%;"></span></li>
             </ul>
             <p class="pf-description">Avec 2 autres passionnés du moteur 3D GoldSource, nous avons commencé un jeu-vidéo collaboratif utilisant ce moteur.</p>
-            <figure class="pf-figure"><img alt="Crossed Paths" class="img" src="crossed_paths_screenshot_2.jpg"></figure>
+            <figure class="pf-figure -half"><img alt="Crossed Paths" class="img" src="crossed_paths_screenshot_2.jpg"></figure>
             <ul class="pf-std-list">
                 <li>Du fait de mes études, de ma carrière professionnel et de la complexité du projet, le développement s’est étalé sur 5 ans, témoignant de ma <strong>persévérance</strong> pour un projet non rémunéré.</li>
                 <li>Le projet nécessitait de ma part des compétences assez variées : programmation (<strong>AngelScript</strong>), graphisme pour les textures (<strong>Gimp</strong>), modélisation 3D pour les décors (<strong>Blender</strong>), gestion de projets.</li>
